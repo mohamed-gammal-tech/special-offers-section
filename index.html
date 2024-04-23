@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.4s ease;
+  }
+  body{
+    padding: 20px;
+  }
+  
+  /* ===== Colours ===== */
+  :root {
+    --body-color: #white;
+    --nav-color: #0f0f29;
+    --side-nav: #010718;
+    --text-color: #fff;
+    --search-bar: #f2f2f2;
+    --search-text: #010718;
+  }
+  .special-offers-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+}
+   .special-offers-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.special-offers-card
+ {
+    flex: 0 0 auto;
+  width: 220px;
+  height: 460px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: relative;
+  margin-right: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cover-photo img, .profile-photo img {
+  width: 100%;
+  display: block;
+}
+
+
+.special-offers-info {
+    padding: 10px 10px 10px 10px;
+    line-height: 1.5;
+  text-align: start;
+}
+
+.offer-price {
+    font-size: 20px;
+    color: var(--nav-color);
+    font-weight: bold;
+}
+.offer-sale {
+    text-decoration: line-through;
+    color: gray;
+}
+.product-creator{
+    color: gray;    
+}
+.product-name{
+    font-size: 20px;
+    color: var(--nav-color);
+}
+.special-offers-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* This will hide the scrollbar for IE, Edge, and Firefox */
+.special-offers-scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.btn-nav {
+    background: var(--nav-color);
+    color: #fff;
+    border-radius: 100%;
+    width: 35px;
+    border: solid white 1px;
+    cursor: pointer;
+    font-size: 32px;
+    position: absolute;
+    top: 37%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+  
+  .btn-nav:first-child {
+    left: 10px;
+  }
+  
+  .btn-nav:last-child {
+    right: 10px;
+  }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special-Offers</title>
+</head>
+<body>
+    <div>
+        <h2>Special offers - HOT</h2>
+    </div>
+    <div class="special-offers-container">
+        <button class="btn-nav" onclick="scrollL()">&lt;</button>
+        <div class="special-offers-scroll">
+            
+            <div class="special-offers-card
+            "> 
+                <div class="cover-photo">
+                    <img src="img/t-shirt.png" alt="Cover Photo 1">
+                </div>
+                <div class="special-offers-info">
+                    <p class="product-name">Wight t-shirt</p>
+                    <p class="product-creator">by Gammal Tech </p>
+                    <p class="offer-price">10 EGP</p>
+                    <p ><span class="offer-sale">350 EGP</span> <span > (95%off)</span> </p>
+                    
+                </div>
+            
+            </div>
+            
+            <div class="special-offers-card
+            "> 
+                <div class="cover-photo">
+                    <img src="img/t-shirt.png" alt="Cover Photo 1">
+                </div>
+                <div class="special-offers-info">
+                    <p class="product-name">Wight t-shirt</p>
+                    <p class="product-creator">by Gammal Tech </p>
+                   <p class="offer-price">10 EGP</p>
+                    <p ><span class="offer-sale">350 EGP</span> <span > (95%off)</span> </p>
+                    
+                </div>
+            
+            </div>
+            
+            <div class="special-offers-card
+            "> 
+                <div class="cover-photo">
+                    <img src="img/t-shirt.png" alt="Cover Photo 1">
+                </div>
+                <div class="special-offers-info">
+                    <p class="product-name">Wight t-shirt</p>
+                    <p class="product-creator">by Gammal Tech </p>
+                   <p class="offer-price">10 EGP</p>
+                    <p ><span class="offer-sale">350 EGP</span> <span > (95%off)</span> </p>
+                    
+                </div>
+            
+            </div>
+            
+            <div class="special-offers-card
+            "> 
+                <div class="cover-photo">
+                    <img src="img/t-shirt.png" alt="Cover Photo 1">
+                </div>
+                <div class="special-offers-info">
+                    <p class="product-name">Wight t-shirt</p>
+                    <p class="product-creator">by Gammal Tech </p>
+                   <p class="offer-price">10 EGP</p>
+                    <p ><span class="offer-sale">350 EGP</span> <span > (95%off)</span> </p>
+                    
+                </div>
+            
+            </div>
+            
+            <div class="special-offers-card
+            "> 
+                <div class="cover-photo">
+                    <img src="img/t-shirt.png" alt="Cover Photo 1">
+                </div>
+                <div class="special-offers-info">
+                    <p class="product-name">Wight t-shirt</p>
+                    <p class="product-creator">by Gammal Tech </p>
+                   <p class="offer-price">10 EGP</p>
+                    <p ><span class="offer-sale">350 EGP</span> <span > (95%off)</span> </p>
+                    
+                </div>
+            
+            </div>
+            
+            <div class="special-offers-card
+            "> 
+                <div class="cover-photo">
+                    <img src="img/t-shirt.png" alt="Cover Photo 1">
+                </div>
+                <div class="special-offers-info">
+                    <p class="product-name">Wight t-shirt</p>
+                    <p class="product-creator">by Gammal Tech </p>
+                   <p class="offer-price">10 EGP</p>
+                    <p ><span class="offer-sale">350 EGP</span> <span > (95%off)</span> </p>
+                    
+                </div>
+            
+            </div>
+            
+            <div class="special-offers-card
+            "> 
+                <div class="cover-photo">
+                    <img src="img/t-shirt.png" alt="Cover Photo 1">
+                </div>
+                <div class="special-offers-info">
+                    <p class="product-name">Wight t-shirt</p>
+                    <p class="product-creator">by Gammal Tech </p>
+                   <p class="offer-price">10 EGP</p>
+                    <p ><span class="offer-sale">350 EGP</span> <span > (95%off)</span> </p>
+                    
+                </div>
+            
+            </div>
+            
+            <div class="special-offers-card
+            "> 
+                <div class="cover-photo">
+                    <img src="img/t-shirt.png" alt="Cover Photo 1">
+                </div>
+                <div class="special-offers-info">
+                    <p class="product-name">Wight t-shirt</p>
+                    <p class="product-creator">by Gammal Tech </p>
+                   <p class="offer-price">10 EGP</p>
+                    <p ><span class="offer-sale">350 EGP</span> <span > (95%off)</span> </p>
+                    
+                </div>
+            
+            </div>
+            
+            <!-- Duplicate the above artist-card div block for more artists -->
+        </div>
+        <button class="btn-nav" onclick="scrollRight()">&gt;</button>
+        </div>
+        
+        
+    </body>
+<script>
+function scrollL() {
+    document.querySelector('.special-offers-scroll').scrollBy({ left: -200, behavior: 'smooth' });
+}
+
+
+function scrollRight() {
+  document.querySelector('.special-offers-scroll').scrollBy({ left: 200, behavior: 'smooth' });
+}
+
+
+</script>
+</html>
